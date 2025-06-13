@@ -1,0 +1,36 @@
+DROP TABLE IF EXISTS katilimlar;
+DROP TABLE IF EXISTS antrenmanlar;
+DROP TABLE IF EXISTS oyuncular;
+DROP TABLE IF EXISTS kullanicilar;
+
+CREATE TABLE kullanicilar (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    kullanici_ad VARCHAR(50) NOT NULL UNIQUE,
+    sifre VARCHAR(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_turkish_ci;
+
+CREATE TABLE oyuncular (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    ad_soyad VARCHAR(100) NOT NULL,
+    numara INT NOT NULL,
+    pozisyon VARCHAR(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_turkish_ci;
+
+CREATE TABLE antrenmanlar (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    tarih DATE NOT NULL,
+    sure_dk INT NOT NULL,
+    tur VARCHAR(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_turkish_ci;
+
+CREATE TABLE katilimlar (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    oyuncu_id INT NOT NULL,
+    antrenman_id INT NOT NULL,
+    katildi_mi TINYINT(1) NOT NULL DEFAULT 0,
+    FOREIGN KEY (oyuncu_id) REFERENCES oyuncular(id) ON DELETE CASCADE,
+    FOREIGN KEY (antrenman_id) REFERENCES antrenmanlar(id) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_turkish_ci;
+
+INSERT INTO kullanicilar (kullanici_ad, sifre) VALUES ('admin', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi');
+
