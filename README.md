@@ -20,16 +20,16 @@ Bu proje, bir voleybol takımının oyuncularını, antrenmanlarını ve katıl�
 ### 1. 🔐 Giriş Sayfası
 ![Giriş Sayfası](screenshots/login.png)
 
-### 2. 🏠 Dashboard
+### 2.  📋 Oyuncular Listesi
 ![Dashboard](screenshots/dashboard.png)
 
-### 3. 📋 Oyuncular Listesi
+### 3. 🗓️ Antrenman Ekleme Sayfası
 ![Oyuncular](screenshots/oyuncular.png)
 
-### 4. 🗓️ Antrenman Ekleme Sayfası
+### 4. ✅ Oyuncunun Antrenmana Katılma Durumu
 ![Antrenman Ekle](screenshots/antrenman_ekle.png)
 
-> Not: Bu görsellerin doğru görünmesi için `screenshots/` klasörünü projenle birlikte sunucuda barındırmalı veya GitHub’a yüklemelisin.
+
 
 ---
 
