@@ -20,7 +20,7 @@ CREATE TABLE antrenmanlar (
     id INT AUTO_INCREMENT PRIMARY KEY,
     tarih DATE NOT NULL,
     sure_dk INT NOT NULL,
-    tur VARCHAR(100) NOT NULL
+    aciklama VARCHAR(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_turkish_ci;
 
 CREATE TABLE katilimlar (
