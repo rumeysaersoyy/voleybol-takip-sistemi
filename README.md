@@ -9,7 +9,9 @@ Bu proje, bir voleybol takımının oyuncularını, antrenmanlarını ve katıl�
 
 ## 🎥 Tanıtım Videosu
 
-[![Uygulama Tanıtım Videosu](https://img.youtube.com/vi/43gVcxP52TY/0.jpg)](https://www.youtube.com/watch?v=43gVcxP52TY)
+## 🎥 Tanıtım Videosu
+
+[Uygulamayı Tanıtım Videosunu İzlemek İçin Tıklayın](https://www.youtube.com/watch?v=43gVcxP52TY)
 
 > 📌 Videoyu yükledikten sonra `VIDEO_ID` kısmını YouTube video ID’si ile değiştir.
 
