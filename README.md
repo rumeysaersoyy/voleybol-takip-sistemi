@@ -7,7 +7,6 @@ Bu proje, bir voleybol takımının oyuncularını, antrenmanlarını ve katıl�
 
 ---
 
-## 🎥 Tanıtım Videosu
 
 ## 🎥 Tanıtım Videosu
 
